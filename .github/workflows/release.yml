@@ -15,10 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     if: contains(github.ref, 'tag')
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
 
       - name: Use Node Version 12
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: '20.x'
 
